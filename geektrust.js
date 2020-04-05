@@ -1,6 +1,9 @@
 
 const fileName = process.argv[2];
-const readFile = require('./modules/file-reader.js');
+const readFile = require('./modules/file-reader');
+const inputGenerator = require('./modules/input-generator');
 
-
-var data = readFile(fileName).toString();
+// read data from the input file
+let data = readFile(fileName).toString();
+// parse the input
+let parsedInput = inputGenerator(data);
