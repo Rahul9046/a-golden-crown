@@ -1,0 +1,22 @@
+module.exports = [
+    {
+        kingdom : 'LAND',
+        emblem: 'PANDA'
+    },
+    {
+        kingdom : 'WATER',
+        emblem: 'OCTOPUS'
+    },
+    {
+        kingdom : 'ICE',
+        emblem: 'MAMMOTH'
+    },
+    {
+        kingdom : 'AIR',
+        emblem: 'OWL'
+    },
+    {
+        kingdom : 'FIRE',
+        emblem: 'DRAGON'
+    }
+]

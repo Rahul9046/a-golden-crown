@@ -4,12 +4,14 @@
  * @return {Object} the number of occurances of each character
  */
 function charCounter(charArr){
-    let returnObj = {};
+    let returnObj = {},
+    uppercaseChar;
     for (let i = 0; i < charArr.length; i++){
-        if (returnObj.hasOwnProperty(charArr[i])){
-            returnObj[charArr[i]]++;
+        uppercaseChar = charArr[i].toUpperCase();
+        if (returnObj.hasOwnProperty(uppercaseChar)){
+            returnObj[uppercaseChar]++;
         } else{
-            returnObj[charArr[i]] = 1;
+            returnObj[uppercaseChar] = 1;
         }
     }
     return returnObj;
@@ -24,7 +26,7 @@ const inputGenerator = function(rawInput){
     return rawInput.split('\n').map(inputLine=>{
         let message = inputLine.split(' ');
         return{
-            kingdom: message[0],
+            kingdom: message[0].toUpperCase(),
             letter_count: charCounter(message[1].split(''))
         }
     })
