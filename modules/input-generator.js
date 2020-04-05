@@ -5,7 +5,7 @@ const charCounter = require('./char-counter'),
  * Function that takes in the file input and returns the parsed input object
  * @param {String} rawInput the content of the file
  * @param {Object} kingdomMetaData meta data of all the kingdoms 
- * @returns {Object} parsed input object
+ * @returns {Array} parsed input array
  */
 const inputGenerator = function(rawInput, kingdomMetaData){
     return rawInput.split('\n').map(inputLine=>{
