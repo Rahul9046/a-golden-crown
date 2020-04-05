@@ -13,7 +13,7 @@ let kingdomMetaData = kingdomMetaDataGenerator();
 let parsedInput = inputGenerator(data, kingdomMetaData);
 // generate the result
 let result = resultGenerator(parsedInput, kingdomMetaData);
-// King Shan becomes ruler only when he wins over atleast two kingdoms
+// King Shan becomes ruler only when he wins over atleast three kingdoms
 if (result.length >= 3){
     console.log('SPACE ', result.join(' '));
 } else {
